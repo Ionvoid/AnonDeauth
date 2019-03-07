@@ -6,7 +6,7 @@ echo 'You are using the' $useriface 'interface for the attack.'
 sudo airmon-ng start $useriface
 read -p 'What is the interface in monitor mode called: ' monface
 sudo airodump-ng $monface 
-xterm -e airodump-ng $monface
+gnome-terminal -e /home/maxim/Desktop/AnonDeauth/monmode.sh
 read -p 'what is the MAC address for the target?' TMAC
 read -p 'what is the channel the target is on?' TCHAN
 #ADD CHANGE CHANNEL HERE
